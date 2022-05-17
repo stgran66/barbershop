@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header>
@@ -91,7 +92,39 @@
         <h2 class="section__title team__title">Our Masters</h2>
         <ul class="team-list">
           <li class="team-list-item master">
-            <img src="" alt="barber treams beard" width="418" height="346" />
+            <picture>
+              <source
+                srcset="./images/team/desktop/john.webp 1x, ./images/team/desktop/john@2x.webp 2x"
+                type="image/webp"
+                media="min-width: 1200px"
+              />
+              <source
+                srcset="./images/team/desktop/john.jpg 1x, ./images/team/desktop/john@2x.jpg 2x"
+                type="image/jpeg"
+                media="min-width: 1200px"
+              />
+              <source
+                srcset="./images/team/tablet/john.webp 1x, ./images/team/tablet/john@2x.webp 2x"
+                type="image/webp"
+                media="min-width: 768px"
+              />
+              <source
+                srcset="./images/team/tablet/john.jpg 1x, ./images/team/tablet/john@2x.jpg 2x"
+                type="image/jpeg"
+                media="min-width: 768px"
+              />
+              <source
+                srcset="./images/team/mobile/john.webp 1x, ./images/team/mobile/john@2x.webp 2x"
+                type="image/webp"
+                media="max-width:767px"
+              />
+              <source
+                srcset="./images/team/mobile/john.jpg 1x, ./images/team/mobile/john@2x.jpg 2x"
+                type="image/jpeg"
+                media="max-width:767px"
+              />
+              <img src="./images/team/desktop/john.jpg" alt="barber treams beard" />
+            </picture>
             <h3 class="master__name">John Smith</h3>
             <p class="master__title">Extreme barber</p>
             <ul class="master__soc-list soc-list">
@@ -118,7 +151,51 @@
             </ul>
           </li>
           <li class="team-list-item master">
-            <img src="" alt="barber treams hair" width="418" height="346" />
+            <picture>
+              <source
+                srcset="
+                  ./images/team/desktop/alan.webp       1x,
+                  ./images/team/desktop/michele@2x.webp 2x
+                "
+                type="image/webp"
+                media="min-width: 1200px"
+              />
+              <source
+                srcset="
+                  ./images/team/desktop/michele.jpg    1x,
+                  ./images/team/desktop/michele@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="min-width: 1200px"
+              />
+              <source
+                srcset="
+                  ./images/team/tablet/michele.webp    1x,
+                  ./images/team/tablet/michele@2x.webp 2x
+                "
+                type="image/webp"
+                media="min-width: 768px"
+              />
+              <source
+                srcset="./images/team/tablet/michele.jpg 1x, ./images/team/tablet/michele@2x.jpg 2x"
+                type="image/jpeg"
+                media="min-width: 768px"
+              />
+              <source
+                srcset="
+                  ./images/team/mobile/michele.webp    1x,
+                  ./images/team/mobile/michele@2x.webp 2x
+                "
+                type="image/webp"
+                media="max-width:767px"
+              />
+              <source
+                srcset="./images/team/mobile/michele.jpg 1x, ./images/team/mobile/michele@2x.jpg 2x"
+                type="image/jpeg"
+                media="max-width:767px"
+              />
+              <img src="./images/team/desktop/michele.jpg" alt="barber treams beard" />
+            </picture>
             <h3 class="master__name">Michele Doe</h3>
             <p class="master__title">Extreme barber</p>
             <ul class="master__soc-list soc-list">
@@ -145,7 +222,39 @@
             </ul>
           </li>
           <li class="team-list-item master">
-            <img src="" alt="barber combs hair" width="418" height="346" />
+            <picture>
+              <source
+                srcset="./images/team/desktop/alan.webp 1x, ./images/team/desktop/alan@2x.webp 2x"
+                type="image/webp"
+                media="min-width: 1200px"
+              />
+              <source
+                srcset="./images/team/desktop/alan.jpg 1x, ./images/team/desktop/alan@2x.jpg 2x"
+                type="image/jpeg"
+                media="min-width: 1200px"
+              />
+              <source
+                srcset="./images/team/tablet/alan.webp 1x, ./images/team/tablet/alan@2x.webp 2x"
+                type="image/webp"
+                media="min-width: 768px"
+              />
+              <source
+                srcset="./images/team/tablet/alan.jpg 1x, ./images/team/tablet/alan@2x.jpg 2x"
+                type="image/jpeg"
+                media="min-width: 768px"
+              />
+              <source
+                srcset="./images/team/mobile/alan.webp 1x, ./images/team/mobile/alan@2x.webp 2x"
+                type="image/webp"
+                media="max-width:767px"
+              />
+              <source
+                srcset="./images/team/mobile/alan.jpg 1x, ./images/team/mobile/alan@2x.jpg 2x"
+                type="image/jpeg"
+                media="max-width:767px"
+              />
+              <img src="./images/team/desktop/alan.jpg" alt="barber treams beard" />
+            </picture>
             <h3 class="master__name">Alan Black</h3>
             <p class="master__title">Extreme barber</p>
             <ul class="master__soc-list soc-list">
@@ -174,33 +283,253 @@
         </ul>
       </section>
       <section class="section gallery">
-        <p class="pre-title">On latin "Barba" means "Beard</p>
+        <p class="pre-title">In latin "Barba" means "Beard</p>
         <h2 class="section__title gallery__title">Barbershop Gallery</h2>
+        <ul class="gallery-list">
+          <li class="gallery-list__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/gallery/desktop/treaming.webp    1x,
+                  ./images/gallery/desktop/treaming@2x.webp 2x
+                "
+                type="image/webp"
+                media="min-width:1200px"
+              />
+              <source
+                srcset="
+                  ./images/gallery/desktop/treaming.jpg    1x,
+                  ./images/gallery/desktop/treaming@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="min-width:1200px"
+              />
+              <source
+                srcset="
+                  ./images/gallery/tablet/treaming.webp    1x,
+                  ./images/gallery/tablet/treaming@2x.webp 2x
+                "
+                type="image/webp"
+                media="min-width:768px"
+              />
+              <source
+                srcset="
+                  ./images/gallery/tablet/treaming.jpg    1x,
+                  ./images/gallery/tablet/treaming@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="min-width:768px"
+              />
+              <source
+                srcset="
+                  ./images/gallery/mobile/treaming.webp    1x,
+                  ./images/gallery/mobile/treaming@2x.webp 2x
+                "
+                type="image/webp"
+                media="max-width:767px"
+              />
+              <source
+                srcset="
+                  ./images/gallery/mobile/treaming.jpg    1x,
+                  ./images/gallery/mobile/treaming@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="max-width:767px"
+              />
+              <img src="./images/gallery/desktop/treaming.jpg" alt="barber is treaming hair" />
+            </picture>
+          </li>
+          <li class="gallery-list__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/gallery/desktop/foaming.webp    1x,
+                  ./images/gallery/desktop/foaming@2x.webp 2x
+                "
+                type="image/webp"
+                media="min-width:1200px"
+              />
+              <source
+                srcset="
+                  ./images/gallery/desktop/foaming.jpg    1x,
+                  ./images/gallery/desktop/foaming@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="min-width:1200px"
+              />
+              <source
+                srcset="
+                  ./images/gallery/tablet/foaming.webp    1x,
+                  ./images/gallery/tablet/foaming@2x.webp 2x
+                "
+                type="image/webp"
+                media="min-width:768px"
+              />
+              <source
+                srcset="
+                  ./images/gallery/tablet/foaming.jpg    1x,
+                  ./images/gallery/tablet/foaming@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="min-width:768px"
+              />
+              <source
+                srcset="
+                  ./images/gallery/mobile/foaming.webp    1x,
+                  ./images/gallery/mobile/foaming@2x.webp 2x
+                "
+                type="image/webp"
+                media="max-width:767px"
+              />
+              <source
+                srcset="
+                  ./images/gallery/mobile/foaming.jpg    1x,
+                  ./images/gallery/mobile/foaming@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="max-width:767px"
+              />
+              <img
+                src="./images/gallery/desktop/foaming.jpg"
+                alt="barber is foaming clients neck"
+              />
+            </picture>
+          </li>
+          <li class="gallery-list__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/gallery/desktop/preparing.webp    1x,
+                  ./images/gallery/desktop/preparing@2x.webp 2x
+                "
+                type="image/webp"
+                media="min-width:1200px"
+              />
+              <source
+                srcset="
+                  ./images/gallery/desktop/preparing.jpg    1x,
+                  ./images/gallery/desktop/preparing@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="min-width:1200px"
+              />
+              <source
+                srcset="
+                  ./images/gallery/tablet/preparing.webp    1x,
+                  ./images/gallery/tablet/preparing@2x.webp 2x
+                "
+                type="image/webp"
+                media="min-width:768px"
+              />
+              <source
+                srcset="
+                  ./images/gallery/tablet/preparing.jpg    1x,
+                  ./images/gallery/tablet/preparing@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="min-width:768px"
+              />
+              <source
+                srcset="
+                  ./images/gallery/mobile/preparing.webp    1x,
+                  ./images/gallery/mobile/preparing@2x.webp 2x
+                "
+                type="image/webp"
+                media="max-width:767px"
+              />
+              <source
+                srcset="
+                  ./images/gallery/mobile/preparing.jpg    1x,
+                  ./images/gallery/mobile/preparing@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="max-width:767px"
+              />
+              <img
+                src="./images/gallery/desktop/preparing.jpg"
+                alt="barber is preparing client for shaving"
+              />
+            </picture>
+          </li>
+          <li class="gallery-list__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/gallery/desktop/shaving.webp    1x,
+                  ./images/gallery/desktop/shaving@2x.webp 2x
+                "
+                type="image/webp"
+                media="min-width:1200px"
+              />
+              <source
+                srcset="
+                  ./images/gallery/desktop/shaving.jpg    1x,
+                  ./images/gallery/desktop/shaving@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="min-width:1200px"
+              />
+              <source
+                srcset="
+                  ./images/gallery/tablet/shaving.webp    1x,
+                  ./images/gallery/tablet/shaving@2x.webp 2x
+                "
+                type="image/webp"
+                media="min-width:768px"
+              />
+              <source
+                srcset="
+                  ./images/gallery/tablet/shaving.jpg    1x,
+                  ./images/gallery/tablet/shaving@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="min-width:768px"
+              />
+              <source
+                srcset="
+                  ./images/gallery/mobile/shaving.webp    1x,
+                  ./images/gallery/mobile/shaving@2x.webp 2x
+                "
+                type="image/webp"
+                media="max-width:767px"
+              />
+              <source
+                srcset="
+                  ./images/gallery/mobile/shaving.jpg    1x,
+                  ./images/gallery/mobile/shaving@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="max-width:767px"
+              />
+              <img src="./images/gallery/desktop/shaving.jpg" alt="barber is shaving client" />
+            </picture>
+          </li>
+        </ul>
+      </section>
+      <section class="reservation">
+        <h2 class="section__title reservation__title">Make an appointment</h2>
+        <form class="appointment-form"></form>
+      </section>
+      <section class="section contacts">
+        <h2 class="section__title contacts__title">Our contact info</h2>
+        <address class="address">
+          <a href="" class="address__location">
+            <svg width="24" height="24"><use href="" class="address-icon"></use></svg>
+            Vasylkivska str., 7A, Kyi, 08132
+          </a>
+          <a href="tel:+380441111111" class="address__tel">
+            <svg width="24" height="24"><use href="" class="address-icon"></use></svg>
+            +38 044 111 11 11
+          </a>
+          <a href="mailto:barbershop@email.com" class="address__email">
+            <svg width="24" height="24"><use href="" class="address-icon"></use></svg>
+            barbershop@email.com
+          </a>
+        </address>
+        <h3 class="subsection__title opening-hours">Opening hours</h3>
+        <p class="opening-hours__text">Everyday from 9:00 to 22:00</p>
       </section>
     </main>
-    <section class="reservation">
-      <h2 class="section__title reservation__title">Make an appointment</h2>
-      <form class="appointment-form"></form>
-    </section>
-    <section class="section contacts">
-      <h2 class="section__title contacts__title">Our contact info</h2>
-      <address class="address">
-        <a href="" class="address__location">
-          <svg width="24" height="24"><use href="" class="address-icon"></use></svg>
-          Vasylkivska str., 7A, Kyi, 08132
-        </a>
-        <a href="tel:+380441111111" class="address__tel">
-          <svg width="24" height="24"><use href="" class="address-icon"></use></svg>
-          +38 044 111 11 11
-        </a>
-        <a href="mailto:barbershop@email.com" class="address__email">
-          <svg width="24" height="24"><use href="" class="address-icon"></use></svg>
-          barbershop@email.com
-        </a>
-      </address>
-      <h3 class="subsection__title opening-hours">Opening hours</h3>
-      <p class="opening-hours__text">Everyday from 9:00 to 22:00</p>
-    </section>
     <footer class="footer">
       <p class="copyright">&copy; Copyright 2020</p>
       <ul class="footer__social-list">

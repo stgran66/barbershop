@@ -1,0 +1,32 @@
+.reservation {
+  background-color: #191c26;
+  &__title {
+    margin-top: 0;
+    margin-bottom: 44px;
+  }
+}
+.appointment-form {
+  &__wrapper {
+    position: relative;
+  }
+
+  &__textfield {
+    cursor: pointer;
+    width: 100%;
+    padding: 8px 0;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  }
+  &__label {
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    @include font(11px, 600, 1.3636, 0.1em);
+    text-transform: uppercase;
+
+    color: rgba(157, 164, 189, 0.4);
+  }
+}

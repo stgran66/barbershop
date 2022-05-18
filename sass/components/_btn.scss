@@ -1,0 +1,30 @@
+.btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+.btn-reservation {
+  padding: 12px 20px;
+
+  font-family: inherit;
+  @include font(12px, 600, 1.3333, 0.09em);
+  text-transform: uppercase;
+
+  color: $title-color;
+
+  background-color: transparent;
+  border: 1px solid $brand-color;
+  border-radius: 25px;
+
+  @include transition(color, background-color);
+
+  &--dark {
+    color: $secondary-brand-color;
+  }
+  &:hover,
+  &:focus {
+    color: $secondary-brand-color;
+    background-color: $brand-color;
+  }
+}

@@ -1,0 +1,14 @@
+.barbershop {
+  background-color: $secondary-brand-color;
+  &__title {
+    @include font(28px, 700, 1.179, 0.05em);
+  }
+  &__after-title {
+    margin-bottom: 20px;
+
+    @include font(16px, 400, 1.62, 0.02em);
+  }
+  &__text {
+    margin-bottom: 40px;
+  }
+}

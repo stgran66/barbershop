@@ -220,6 +220,8 @@ body {
 }
 
 .section__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
   color: #303030;
   font-family: 'Raleway', sans-serif;
   font-size: 42px;
@@ -243,6 +245,69 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.btn-reservation {
+  padding: 12px 20px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.3333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #303030;
+  background-color: transparent;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-reservation--dark {
+  color: #ffffff;
+}
+
+.btn-reservation:hover, .btn-reservation:focus {
+  color: #ffffff;
+  background-color: #ff6c00;
+}
+
+.header__container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 40px;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.logo__icon {
+  fill: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 250ms cubic-bezier(0.4, 0, 0.2, 1), 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo:hover .logo__icon,
+.logo:focus .logo__icon {
+  fill: #ff6c00;
+}
+
+.mob-menu-btn__icon {
+  fill: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 250ms cubic-bezier(0.4, 0, 0.2, 1), 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-btn:hover .mob-menu-btn__icon,
+.mob-menu-btn:focus .mob-menu-btn__icon {
+  fill: #ff6c00;
 }
 
 .hero {
@@ -302,5 +367,113 @@ body {
   line-height: 1.1667;
   letter-spacing: 0.05em;
   color: #ffffff;
+}
+
+.barbershop {
+  background-color: #ffffff;
+}
+
+.barbershop__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.179;
+  letter-spacing: 0.05em;
+}
+
+.barbershop__after-title {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+}
+
+.barbershop__text {
+  margin-bottom: 40px;
+}
+
+.prices {
+  background-color: #111319;
+  background-image: url(../images/background/prices/prices-bg-mobile.png);
+  background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(../images/background/prices/prices-bg-mobile@2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .prices {
+    background-image: url(../images/background/prices/prices-bg-tablet.png);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(../images/background/prices/prices-bg-tablet@2x.png);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .prices {
+    background-image: url(../images/background/prices/prices-bg-desktop.png);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(../images/background/prices/prices-bg-desktop@2x.png);
+  }
+}
+
+.prices__title {
+  margin-bottom: 44px;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.prices-list {
+  padding: 30px;
+  margin-bottom: 50px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2.14;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.prices-list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.prices-list__item {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.price {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-end;
+}
+
+.price::before {
+  content: '';
+  margin-left: 6px;
+  margin-right: 6px;
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+
+.prices__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*# sourceMappingURL=main.css.map */

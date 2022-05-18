@@ -1,0 +1,27 @@
+.header__container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 40px;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.logo__icon {
+  fill: $secondary-brand-color;
+  @include transition(fill);
+  .logo:hover &,
+  .logo:focus & {
+    fill: $brand-color;
+  }
+}
+.mob-menu-btn__icon {
+  fill: $secondary-brand-color;
+  @include transition(fill);
+  .mob-menu-btn:hover &,
+  .mob-menu-btn:focus & {
+    fill: $brand-color;
+  }
+}

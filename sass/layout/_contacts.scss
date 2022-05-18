@@ -1,0 +1,45 @@
+.contacts {
+  background-color: #191c26;
+  background-image: url(../images/background/contacts/contacts-bg-mobile.png);
+  background-size: cover;
+  background-position: center;
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/background/contacts/contacts-bg-mobile@2x.png);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/background/contacts/contacts-bg-tablet.png);
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background/contacts/contacts-bg-tablet@2x.png);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/background/contacts/contacts-bg-desktop.png);
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background/contacts/contacts-bg-desktop@2x.png);
+    }
+  }
+  &__title {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+}
+.address {
+  font-style: normal;
+  @include font(18px, 400, 1.667, 0.02em);
+
+  color: $primary-text-color;
+  &__link {
+    display: block;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  &__icon {
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+}

@@ -4,7 +4,10 @@
   padding: 0;
   cursor: pointer;
 }
-.btn-reservation {
+.btn-reservation,
+.appointment-form__btn {
+  width: 160px;
+  min-height: 40px;
   padding: 12px 20px;
 
   font-family: inherit;
@@ -27,4 +30,8 @@
     color: $secondary-brand-color;
     background-color: $brand-color;
   }
+}
+.appointment-form__btn {
+  display: block;
+  margin: 44px auto 0 auto;
 }

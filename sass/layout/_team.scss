@@ -1,6 +1,9 @@
 .team {
   background-color: #f7f7f7;
-}
-.team__title {
-  margin-bottom: 44px;
+  &__title {
+    margin-bottom: 44px;
+  }
+  &-list__item:not(:last-child) {
+    margin-bottom: 64px;
+  }
 }

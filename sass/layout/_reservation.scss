@@ -12,6 +12,7 @@
 
   &__textfield {
     cursor: pointer;
+    margin-bottom: 44px;
     width: 100%;
     padding: 8px 0;
     background-color: transparent;
@@ -19,14 +20,59 @@
     border-right: none;
     border-left: none;
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    color: $secondary-brand-color;
+    @include transition(border-bottom);
+    &:hover,
+    &:focus,
+    &:not(:placeholder-shown) {
+      border-bottom: 1px solid $secondary-brand-color;
+      outline: none;
+    }
   }
   &__label {
     cursor: pointer;
     position: absolute;
+    left: 0;
     top: 8px;
+
     @include font(11px, 600, 1.3636, 0.1em);
     text-transform: uppercase;
-
     color: rgba(157, 164, 189, 0.4);
+
+    @include transition(color, transform);
+    .appointment-form__textfield:hover + &,
+    .appointment-form__textfield:focus + &,
+    .appointment-form__textfield:not(:placeholder-shown) + &,
+    .appointment-form__textarea:focus + &,
+    .appointment-form__textarea:hover + &,
+    .appointment-form__textarea:not(:placeholder-shown) + & {
+      color: $secondary-brand-color;
+    }
+
+    .appointment-form__textfield:focus + &,
+    .appointment-form__textfield:not(:placeholder-shown) + &,
+    .appointment-form__textarea:focus + &,
+    .appointment-form__textarea:not(:placeholder-shown) + & {
+      transform: translateY(calc(-100% - 16px));
+    }
+  }
+  &__textarea {
+    cursor: pointer;
+    width: 100%;
+    height: 76px;
+    padding: 8px 0;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    color: $secondary-brand-color;
+    resize: none;
+    &:hover,
+    &:focus,
+    &:not(:placeholder-shown) {
+      border-bottom: 1px solid $secondary-brand-color;
+      outline: none;
+    }
   }
 }

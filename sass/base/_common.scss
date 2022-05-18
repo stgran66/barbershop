@@ -1,0 +1,42 @@
+body {
+  background-color: $secondary-brand-color;
+  color: $secondary-text-color;
+  font-family: 'Open Sans', sans-serif;
+  @include font(14px, 400, 1.86, 0.02em);
+}
+.container {
+  padding: 84px 31px;
+  margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+}
+
+.pre-title {
+  color: $title-color;
+  @include font(11px, 600, 1.36, 0.1em);
+  text-transform: uppercase;
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+    background-color: $title-color;
+  }
+  &--dark {
+    color: $semi-transpartent-text-color;
+    &::before {
+      background-color: $semi-transpartent-text-color;
+    }
+  }
+}
+.section__title {
+  color: $title-color;
+  font-family: 'Raleway', sans-serif;
+  @include font(42px, 700, 1.667, 0.05em);
+  &--dark {
+    color: $secondary-brand-color;
+  }
+}

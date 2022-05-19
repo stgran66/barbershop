@@ -3,8 +3,16 @@ body {
   color: $secondary-text-color;
   font-family: 'Open Sans', sans-serif;
   @include font(14px, 400, 1.86, 0.02em);
+  // @media screen and (max-width: 479px) {
+  //   @include font(2.92vw);
+  // }
+
+  .backdrop[opacity='1'] & {
+    overflow-y: hidden;
+  }
 }
 .container {
+  width: 100%;
   padding: 84px 31px;
   margin: 0 auto;
   @media screen and (min-width: 480px) {
@@ -16,6 +24,10 @@ body {
   color: $title-color;
   @include font(11px, 600, 1.36, 0.1em);
   text-transform: uppercase;
+  // @media screen and (max-width: 479px) {
+  //   @include font(2.29vw);
+  // }
+
   &::before {
     content: '';
     display: inline-block;
@@ -39,6 +51,10 @@ body {
   color: $title-color;
   font-family: 'Raleway', sans-serif;
   @include font(42px, 700, 1.667, 0.05em);
+  @media screen and (max-width: 479px) {
+    @include font(8.5vw);
+  }
+
   &--dark {
     color: $secondary-brand-color;
   }

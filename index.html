@@ -21,11 +21,54 @@
             <use href="./images/icons.svg#icon-logo" class="logo__icon"></use>
           </svg>
         </a>
-        <button type="button" class="mob-menu-btn btn">
+        <button type="button" class="mob-menu-btn btn" data-modal-open>
           <svg width="24" height="16">
             <use href="./images/icons.svg#icon-menu" class="mob-menu-btn__icon"></use>
           </svg>
         </button>
+      </div>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="mob-menu modal">
+          <button type="button" class="mob-menu__close-btn" data-modal-close>
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-close" class="mob-menu__close-icon"></use>
+            </svg>
+          </button>
+          <nav class="nav">
+            <ul class="mob-menu-site-nav">
+              <li class="mob-menu-site-nav__item">
+                <a href="#barbershop" class="mob-menu-site-nav__link">About us</a>
+              </li>
+              <li class="mob-menu-site-nav__item">
+                <a href="#prices" class="mob-menu-site-nav__link">Services and prices</a>
+              </li>
+              <li class="mob-menu-site-nav__item">
+                <a href="#team" class="mob-menu-site-nav__link">Masters</a>
+              </li>
+              <li class="mob-menu-site-nav__item">
+                <a href="#contacts" class="mob-menu-site-nav__link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mob-menu-contacts-list">
+            <li class="mob-menu-contacts-list__item">
+              <a href="tel:+380441111111" class="mob-menu-contacts-list__link">+38 044 111 11 11</a>
+            </li>
+            <li class="mob-menu-contacts-list__item">
+              <a href="#reservation" class="mob-menu-contacts-list__btn-link btn-link"
+                >Make an appointment</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-menu-soc-list">
+            <li class="mob-menu-soc-list__item">
+              <a href="" class="mob-menu-soc-list__link">Instagram</a>
+            </li>
+            <li class="mob-menu-soc-list__item">
+              <a href="" class="mob-menu-soc-list__link">Youtube</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -38,7 +81,7 @@
           </p>
         </div>
       </section>
-      <section class="section barbershop">
+      <section class="section barbershop" id="barbershop">
         <div class="container">
           <p class="pre-title">About us</p>
           <h2 class="section__title barbershop__title">Best Barbershop of your city</h2>
@@ -51,10 +94,10 @@
             always on the same page with clients. Therefore, we are ready to improve everyone who
             comes to us!
           </p>
-          <button type="button" class="btn btn-reservation">Make an appointment</button>
+          <a href="#reservation" class="btn-link reservation-link">Make an appointment</a>
         </div>
       </section>
-      <section class="section prices">
+      <section class="section prices" id="prices">
         <div class="container">
           <p class="pre-title pre-title--dark">Spend time in the company of the best masters</p>
           <h2 class="section__title section__title--dark prices__title">Services and prices</h2>
@@ -80,13 +123,13 @@
               Gray hair camouflage <span class="price">from 200 UAH</span>
             </li>
           </ul>
-          <button type="button" class="btn btn-reservation btn-reservation--dark prices__btn">
-            Make an appointment
-          </button>
+          <a href="#reservation" class="btn-link prices-btn-link btn-link--dark"
+            >Make an appointment</a
+          >
         </div>
       </section>
       <section class="section advantages">
-        <div class="container">
+        <div class="container advantages__container">
           <p class="pre-title">Old traditional school</p>
           <h2 class="section__title advantages__title">Why come to us?</h2>
           <p class="after-title advantages__after-title">
@@ -113,7 +156,7 @@
           </ul>
         </div>
       </section>
-      <section class="section team">
+      <section class="section team" id="team">
         <div class="container">
           <p class="pre-title">For real connoisseurs of the climate</p>
           <h2 class="section__title team__title">Our Masters</h2>
@@ -578,7 +621,7 @@
           </ul>
         </div>
       </section>
-      <section class="reservation">
+      <section class="reservation" id="reservation">
         <div class="container">
           <h2 class="section__title section__title--dark reservation__title">
             Make an appointment
@@ -621,7 +664,7 @@
           </form>
         </div>
       </section>
-      <section class="section contacts">
+      <section class="section contacts" id="contacts">
         <div class="container contacts__container">
           <h2 class="section__title section__title--dark contacts__title">Our contact info</h2>
           <address class="address">
@@ -650,15 +693,16 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container footer__container">
         <p class="copyright">&copy; Copyright 2020</p>
-        <ul class="footer__social-list">
-          <li class="social-list__item">
-            <a href="" class="footer__link">Instagram</a>
+        <ul class="footer__soc-list footer-soc-list">
+          <li class="footer-soc-list__item">
+            <a href="" class="footer__link footer-soc-list__link">Instagram</a>
           </li>
-          <li class="social-list__item"><a href="" class="footer__link">Youtube</a></li>
+          <li class="footer-soc-list__item"><a href="" class="footer__link">Youtube</a></li>
         </ul>
       </div>
     </footer>
+    <script src="./js/mob-menu.js"></script>
   </body>
 </html>

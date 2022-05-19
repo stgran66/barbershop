@@ -30,6 +30,9 @@
 .address {
   font-style: normal;
   @include font(18px, 400, 1.667, 0.02em);
+  @media screen and (max-width: 479px) {
+    @include font(3.75vw);
+  }
 
   color: $primary-text-color;
   &__link {
@@ -41,5 +44,37 @@
   &__icon {
     margin-right: 20px;
     vertical-align: middle;
+  }
+
+  &__email {
+    text-decoration: underline;
+  }
+}
+.opening-hours {
+  margin-top: 44px;
+  margin-bottom: 20px;
+
+  @include font(11px, 600, 1.3636, 0.1em);
+  text-transform: uppercase;
+
+  color: $secondary-brand-color;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.4);
+  }
+  &__text {
+    font-style: normal;
+    @include font(18px, 400, 1.667, 0.02em);
+    @media screen and (max-width: 479px) {
+      @include font(3.75vw);
+    }
+
+    color: $primary-text-color;
   }
 }

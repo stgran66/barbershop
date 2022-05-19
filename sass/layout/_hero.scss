@@ -34,6 +34,9 @@
     margin-top: 20px;
 
     @include font(16px, 400, 1.62, 0.02em);
+    // @media screen and (max-width: 479px) {
+    //   @include font(3.33vw);
+    // }
 
     color: $primary-text-color;
   }
@@ -45,4 +48,7 @@
   @include font(48px, 700, 1.1667, 0.05em);
 
   color: $secondary-brand-color;
+  @media screen and (max-width: 479px) {
+    @include font(10vw, 700, 1.667, 0.05em);
+  }
 }

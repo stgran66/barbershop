@@ -2,11 +2,17 @@
   background-color: $secondary-brand-color;
   &__title {
     @include font(28px, 700, 1.179, 0.05em);
+    @media screen and (max-width: 479px) {
+      @include font(8.5vw);
+    }
   }
   &__after-title {
     margin-bottom: 20px;
 
     @include font(16px, 400, 1.62, 0.02em);
+    // @media screen and (max-width: 479px) {
+    //   @include font(3.33vw);
+    // }
   }
   &__text {
     margin-bottom: 40px;

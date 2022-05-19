@@ -1,13 +1,4 @@
-.btn {
-  border: none;
-  background-color: transparent;
-  padding: 0;
-  cursor: pointer;
-}
-
-.appointment-form__btn {
-  display: block;
-  margin: 44px auto 0 auto;
+.btn-link {
   text-align: center;
   display: block;
   width: 160px;
@@ -34,4 +25,8 @@
     color: $secondary-brand-color;
     background-color: $brand-color;
   }
+}
+.prices-btn-link {
+  margin-left: auto;
+  margin-right: auto;
 }

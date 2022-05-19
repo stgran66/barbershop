@@ -6,8 +6,11 @@
 @import './utils/hidden';
 ///////////////////////////
 @import './components/btn';
-@import './components/master';
+@import './components/btn-link';
 @import './components/soc-list';
+@import './components/master';
+@import './components/backdrop';
+@import './components/mob-menu';
 ///////////////////////////
 @import './layout/header';
 @import './layout/hero';
@@ -18,3 +21,4 @@
 @import './layout/gallery';
 @import './layout/reservation';
 @import './layout/contacts';
+@import './layout/footer';

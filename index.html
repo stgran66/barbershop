@@ -26,6 +26,32 @@
             <use href="./images/icons.svg#icon-menu" class="mob-menu-btn__icon"></use>
           </svg>
         </button>
+        <nav class="site-nav">
+          <ul class="site-nav-list">
+            <li class="site-nav-list__item">
+              <a href="#barbershop" class="site-nav__link">About</a>
+            </li>
+            <li class="site-nav-list__item">
+              <a href="#prices" class="site-nav__link">Prices</a>
+            </li>
+            <li class="site-nav-list__item">
+              <a href="#team" class="site-nav__link">Masters</a>
+            </li>
+            <li class="site-nav-list__item">
+              <a href="#contacts" class="site-nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="site-contacts-list">
+          <li class="site-contacts-list__item">
+            <a href="#reservation" class="site-contacts__btn-link btn-link btn-link--dark"
+              >Reserve</a
+            >
+          </li>
+          <li class="site-contacts-list__item">
+            <a href="tel:+380441111111" class="site-contacts__link">+38 044 111 11 11</a>
+          </li>
+        </ul>
       </div>
       <div class="backdrop is-hidden" data-modal>
         <div class="mob-menu modal">
@@ -55,9 +81,7 @@
               <a href="tel:+380441111111" class="mob-menu-contacts-list__link">+38 044 111 11 11</a>
             </li>
             <li class="mob-menu-contacts-list__item">
-              <a href="#reservation" class="mob-menu-contacts-list__btn-link btn-link"
-                >Make an appointment</a
-              >
+              <a href="#reservation" class="mob-menu-contacts-list__btn-link btn-link">Reserve</a>
             </li>
           </ul>
           <ul class="mob-menu-soc-list">
@@ -74,27 +98,128 @@
     <main>
       <section class="section hero">
         <div class="container hero__container">
-          <p class="pre-title pre-title--dark">a hair salon for men in Kyiv</p>
-          <h1 class="page-title hero__title">BarberShop</h1>
-          <p class="hero__after-title">
-            We are experts in trendy man's haircuts. We work quickly, carefully and with taste.
-          </p>
+          <div class="hero__company-soc-container">
+            <ul class="hero-soc-list">
+              <li class="hero-soc-list__item">
+                <a href="" class="hero-soc-list__link">Instagram</a>
+              </li>
+              <li class="hero-soc-list__item">
+                <a href="" class="hero-soc-list__link">Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="hero__content-container">
+            <p class="pre-title pre-title--dark">a hair salon for men in Kyiv</p>
+            <h1 class="page-title hero__title">BarberShop</h1>
+            <p class="hero__after-title">
+              We are experts in trendy man's haircuts. We work quickly, carefully and with taste.
+            </p>
+          </div>
         </div>
       </section>
       <section class="section barbershop" id="barbershop">
-        <div class="container">
-          <p class="pre-title">About us</p>
-          <h2 class="section__title barbershop__title">Best Barbershop of your city</h2>
-          <p class="after-title barbershop__after-title">
-            If you want to add more confidence to your image, you are definitely in the right place.
-          </p>
-          <p class="section-text barbershop__text">
-            We are the team that never rests on its laurels and yearns for change.And when you get
-            into the hands of our master, you can never be the same again. We are the team, that is
-            always on the same page with clients. Therefore, we are ready to improve everyone who
-            comes to us!
-          </p>
-          <a href="#reservation" class="btn-link reservation-link">Make an appointment</a>
+        <div class="container barbershop__container">
+          <div class="barbershop-pictures">
+            <ul class="barbershop-pictures-list pictures-list">
+              <li class="pictures-list__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/barbershop/desktop/foaming.webp    1x,
+                      ./images/barbershop/desktop/foaming@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbershop/desktop/foaming.jpg    1x,
+                      ./images/barbershop/desktop/foaming@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbershop/tablet/foaming.webp    1x,
+                      ./images/barbershop/tablet/foaming@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbershop/tablet/foaming.jpg    1x,
+                      ./images/barbershop/tablet/foaming@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width:768px)"
+                  />
+                  <img
+                    src="./images/barbershop/tablet/foaming.jpg"
+                    alt="barber is foaming client"
+                  />
+                </picture>
+              </li>
+              <li class="pictures-list__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/barbershop/desktop/shaving.webp    1x,
+                      ./images/barbershop/desktop/shaving@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbershop/desktop/shaving.jpg    1x,
+                      ./images/barbershop/desktop/shaving@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbershop/tablet/shaving.webp    1x,
+                      ./images/barbershop/tablet/shaving@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbershop/tablet/shaving.jpg    1x,
+                      ./images/barbershop/tablet/shaving@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width:768px)"
+                  />
+                  <img
+                    src="./images/barbershop/tablet/shaving.jpg"
+                    alt="barber is shaving client"
+                    width="330"
+                    height="265"
+                  />
+                </picture>
+              </li>
+            </ul>
+          </div>
+          <div class="barbershop-content">
+            <p class="pre-title">About us</p>
+            <h2 class="section__title barbershop__title">Best Barbershop of your city</h2>
+            <p class="after-title barbershop__after-title">
+              If you want to add more confidence to your image, you are definitely in the right
+              place.
+            </p>
+            <p class="section-text barbershop__text">
+              We are the team that never rests on its laurels and yearns for change.And when you get
+              into the hands of our master, you can never be the same again. We are the team, that
+              is always on the same page with clients. Therefore, we are ready to improve everyone
+              who comes to us!
+            </p>
+            <a href="#reservation" class="btn-link reservation-link">Reserve</a>
+          </div>
         </div>
       </section>
       <section class="section prices" id="prices">
@@ -123,9 +248,7 @@
               Gray hair camouflage <span class="price">from 200 UAH</span>
             </li>
           </ul>
-          <a href="#reservation" class="btn-link prices-btn-link btn-link--dark"
-            >Make an appointment</a
-          >
+          <a href="#reservation" class="btn-link prices-btn-link btn-link--dark">Reserve</a>
         </div>
       </section>
       <section class="section advantages">
@@ -136,28 +259,30 @@
             Only good things are said about us. But it's better to see and feel 1 time, than read 10
             times.
           </p>
-          <ul class="advantages-list">
-            <li class="advantages-list__item advantage">
-              <h3 class="advantage__title">600<span class="advantage__title--plus">+</span></h3>
-              Happy clients a day
-            </li>
-            <li class="advantages-list__item advantage">
-              <h3 class="advantage__title">50<span class="advantage__title--plus">+</span></h3>
-              Awards for great service
-            </li>
-            <li class="advantages-list__item advantage">
-              <h3 class="advantage__title">20<span class="advantage__title--plus">+</span></h3>
-              Best barbers of Kyiv
-            </li>
-            <li class="advantages-list__item advantage">
-              <h3 class="advantage__title">100<span class="advantage__title--plus">+</span></h3>
-              Gifts for regulars
-            </li>
-          </ul>
+          <div class="advantages-wrapper">
+            <ul class="advantages-list">
+              <li class="advantages-list__item advantage">
+                <h3 class="advantage__title">600<span class="advantage__title--plus">+</span></h3>
+                Happy clients a day
+              </li>
+              <li class="advantages-list__item advantage">
+                <h3 class="advantage__title">50<span class="advantage__title--plus">+</span></h3>
+                Awards for great service
+              </li>
+              <li class="advantages-list__item advantage">
+                <h3 class="advantage__title">20<span class="advantage__title--plus">+</span></h3>
+                Best barbers of Kyiv
+              </li>
+              <li class="advantages-list__item advantage">
+                <h3 class="advantage__title">100<span class="advantage__title--plus">+</span></h3>
+                Gifts for regulars
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="section team" id="team">
-        <div class="container">
+        <div class="container team__container">
           <p class="pre-title">For real connoisseurs of the climate</p>
           <h2 class="section__title team__title">Our Masters</h2>
           <ul class="team-list">
@@ -186,12 +311,12 @@
                 <source
                   srcset="./images/team/mobile/john.webp 1x, ./images/team/mobile/john@2x.webp 2x"
                   type="image/webp"
-                  media="(max-width:767px)"
+                  media="(max-width:767.98px)"
                 />
                 <source
                   srcset="./images/team/mobile/john.jpg 1x, ./images/team/mobile/john@2x.jpg 2x"
                   type="image/jpeg"
-                  media="(max-width:767px)"
+                  media="(max-width:767.98px)"
                 />
                 <img src="./images/team/desktop/john.jpg" alt="barber treams beard" />
               </picture>
@@ -273,7 +398,7 @@
                     ./images/team/mobile/michele@2x.webp 2x
                   "
                   type="image/webp"
-                  media="(max-width:767px)"
+                  media="(max-width:767.98px)"
                 />
                 <source
                   srcset="
@@ -281,7 +406,7 @@
                     ./images/team/mobile/michele@2x.jpg 2x
                   "
                   type="image/jpeg"
-                  media="(max-width:767px)"
+                  media="(max-width:767.98px)"
                 />
                 <img src="./images/team/desktop/michele.jpg" alt="barber treams beard" />
               </picture>
@@ -348,12 +473,12 @@
                 <source
                   srcset="./images/team/mobile/alan.webp 1x, ./images/team/mobile/alan@2x.webp 2x"
                   type="image/webp"
-                  media="(max-width:767px)"
+                  media="(max-width:767.98px)"
                 />
                 <source
                   srcset="./images/team/mobile/alan.jpg 1x, ./images/team/mobile/alan@2x.jpg 2x"
                   type="image/jpeg"
-                  media="(max-width:767px)"
+                  media="(max-width:767.98px)"
                 />
                 <img src="./images/team/desktop/alan.jpg" alt="barber treams beard" />
               </picture>
@@ -443,7 +568,7 @@
                     ./images/gallery/mobile/treaming@2x.webp 2x
                   "
                   type="image/webp"
-                  media="(max-width:767px)"
+                  media="(max-width:767.98px)"
                 />
                 <source
                   srcset="
@@ -451,7 +576,7 @@
                     ./images/gallery/mobile/treaming@2x.jpg 2x
                   "
                   type="image/jpeg"
-                  media="(max-width:767px)"
+                  media="(max-width:767.98px)"
                 />
                 <img src="./images/gallery/desktop/treaming.jpg" alt="barber is treaming hair" />
               </picture>
@@ -496,7 +621,7 @@
                     ./images/gallery/mobile/foaming@2x.webp 2x
                   "
                   type="image/webp"
-                  media="(max-width:767px)"
+                  media="(max-width:767.98px)"
                 />
                 <source
                   srcset="
@@ -504,7 +629,7 @@
                     ./images/gallery/mobile/foaming@2x.jpg 2x
                   "
                   type="image/jpeg"
-                  media="(max-width:767px)"
+                  media="(max-width:767.98px)"
                 />
                 <img src="./images/gallery/desktop/foaming.jpg" alt="barber is foaming beard" />
               </picture>
@@ -549,7 +674,7 @@
                     ./images/gallery/mobile/preparing@2x.webp 2x
                   "
                   type="image/webp"
-                  media="(max-width:767px)"
+                  media="(max-width:767.98px)"
                 />
                 <source
                   srcset="
@@ -557,7 +682,7 @@
                     ./images/gallery/mobile/preparing@2x.jpg 2x
                   "
                   type="image/jpeg"
-                  media="(max-width:767px)"
+                  media="(max-width:767.98px)"
                 />
                 <img
                   src="./images/gallery/desktop/preparing.jpg"
@@ -605,7 +730,7 @@
                     ./images/gallery/mobile/shaving@2x.webp 2x
                   "
                   type="image/webp"
-                  media="(max-width:767px)"
+                  media="(max-width:767.98px)"
                 />
                 <source
                   srcset="
@@ -613,7 +738,7 @@
                     ./images/gallery/mobile/shaving@2x.jpg 2x
                   "
                   type="image/jpeg"
-                  media="(max-width:767px)"
+                  media="(max-width:767.98px)"
                 />
                 <img src="./images/gallery/desktop/shaving.jpg" alt="barber is shaving client" />
               </picture>
@@ -623,9 +748,7 @@
       </section>
       <section class="reservation" id="reservation">
         <div class="container">
-          <h2 class="section__title section__title--dark reservation__title">
-            Make an appointment
-          </h2>
+          <h2 class="section__title section__title--dark reservation__title">Reserve</h2>
           <form class="appointment-form">
             <div class="appointment-form__wrapper">
               <input
@@ -666,13 +789,13 @@
       </section>
       <section class="section contacts" id="contacts">
         <div class="container contacts__container">
-          <h2 class="section__title section__title--dark contacts__title">Our contact info</h2>
+          <h2 class="section__title section__title--dark contacts__title">Contacts</h2>
           <address class="address">
             <a href="" class="address__location address__link">
               <svg width="24" height="24" class="address__icon">
                 <use href="./images/icons.svg#icon-map-pin"></use>
               </svg>
-              Vasylkivska str., 7A, Kyi, 08132
+              Vasylkivska str., 7A, Kyiv, 08132
             </a>
             <a href="tel:+380441111111" class="address__tel address__link">
               <svg width="24" height="24" class="address__icon">
@@ -687,8 +810,10 @@
               barbershop@email.com
             </a>
           </address>
-          <h3 class="subsection__title opening-hours">Opening hours</h3>
-          <p class="opening-hours__text">Everyday from 9:00 to 22:00</p>
+          <div class="contacts__subsection">
+            <h3 class="subsection__title opening-hours">Opening hours</h3>
+            <p class="opening-hours__text">Everyday from 9:00 to 22:00</p>
+          </div>
         </div>
       </section>
     </main>

@@ -6,4 +6,10 @@
   &-list__item:not(:last-child) {
     margin-bottom: 64px;
   }
+  &__container {
+    @media screen and (min-width: 768px) {
+      padding-left: 159px;
+      padding-right: 159px;
+    }
+  }
 }

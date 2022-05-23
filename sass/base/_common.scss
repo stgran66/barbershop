@@ -3,9 +3,6 @@ body {
   color: $secondary-text-color;
   font-family: 'Open Sans', sans-serif;
   @include font(14px, 400, 1.86, 0.02em);
-  // @media screen and (max-width: 479px) {
-  //   @include font(2.92vw);
-  // }
 
   .backdrop[opacity='1'] & {
     overflow-y: hidden;
@@ -18,15 +15,20 @@ body {
   @media screen and (min-width: 480px) {
     width: 480px;
   }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 100px 39px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding: 130px 15px;
+  }
 }
 
 .pre-title {
   color: $title-color;
   @include font(11px, 600, 1.36, 0.1em);
   text-transform: uppercase;
-  // @media screen and (max-width: 479px) {
-  //   @include font(2.29vw);
-  // }
 
   &::before {
     content: '';
@@ -51,7 +53,7 @@ body {
   color: $title-color;
   font-family: 'Raleway', sans-serif;
   @include font(42px, 700, 1.667, 0.05em);
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 479.98px) {
     @include font(8.5vw);
   }
 

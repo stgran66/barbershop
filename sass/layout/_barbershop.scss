@@ -2,7 +2,7 @@
   background-color: $secondary-brand-color;
   &__title {
     @include font(28px, 700, 1.179, 0.05em);
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 479.98px) {
       @include font(8.5vw);
     }
   }
@@ -10,11 +10,33 @@
     margin-bottom: 20px;
 
     @include font(16px, 400, 1.62, 0.02em);
-    // @media screen and (max-width: 479px) {
-    //   @include font(3.33vw);
-    // }
   }
   &__text {
     margin-bottom: 40px;
+  }
+  &__container {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      padding-right: 39px;
+      padding-left: 39px;
+    }
+  }
+  &-pictures {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+      flex-basis: calc((100% - 30px) / 2);
+      margin-right: 30px;
+    }
+  }
+  .pictures-list {
+    &__item {
+      margin-bottom: 30px;
+    }
+  }
+  &-content {
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
   }
 }

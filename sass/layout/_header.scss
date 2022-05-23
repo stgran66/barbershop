@@ -2,26 +2,112 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+
   padding-top: 40px;
   padding-bottom: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    height: 116px;
+
+    padding-top: 0;
+  }
+  @media screen and (min-width: 768px) {
+    height: auto;
+  }
 }
 .logo__icon {
   fill: $secondary-brand-color;
+  @media screen and (min-width: 768px) {
+    fill: $title-color;
+  }
   @include transition(fill);
   .logo:hover &,
   .logo:focus & {
     fill: $brand-color;
   }
 }
-.mob-menu-btn__icon {
-  fill: $secondary-brand-color;
-  @include transition(fill);
-  .mob-menu-btn:hover &,
-  .mob-menu-btn:focus & {
-    fill: $brand-color;
+.mob-menu-btn {
+  &__icon {
+    fill: $secondary-brand-color;
+    @include transition(fill);
+    .mob-menu-btn:hover &,
+    .mob-menu-btn:focus & {
+      fill: $brand-color;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.site-nav {
+  display: none;
+  flex-grow: 1;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-right: 47.49px;
+    margin-left: 60.64px;
+  }
+  &-list {
+    display: flex;
+    &__item:not(:last-child) {
+      margin-right: 24.25px;
+    }
+  }
+  &__link {
+    dipslay: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include font(12px, 600, 1.333, 0.1em);
+
+    color: $secondary-brand-color;
+    @include transition(color);
+    &:hover,
+    &:focus {
+      color: $brand-color;
+    }
+  }
+}
+.site-contacts-list {
+  display: none;
+  height: 42px;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  &__item {
+    text-align: center;
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &__item:first-child {
+      margin-bottom: 0;
+  }
+  // &__item:last-child {margin-right: 40px;}
+}
+.site-contacts__link {
+  @include font(12px, 600, 1.333, 0.1em);
+
+  text-transform: uppercase;
+
+  color: $secondary-brand-color;
+  @include transition(color);
+  &:hover,
+  &:focus {
+    color: $brand-color;
+  }
+}
+.header__link {
+  @media screen and (min-width: 768px) {
+    margin-left: 7.5px;
   }
 }

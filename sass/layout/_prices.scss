@@ -36,22 +36,49 @@
 
   @include font(14px, 400, 2.14, 0.02em);
   color: $primary-text-color;
-
-  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-
+  background-image: linear-gradient(
+    to right,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 50%,
+    #090b13 75%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
   @media screen and (max-width: 479.98px) {
     @include font(3vw);
   }
   @media screen and (min-width: 768px) {
     @include font(18px);
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 255px;
+    padding: 0;
+  }
 
   &__item:not(:last-child) {
-    margin-bottom: 20px;
+    @media screen and (max-width: 1199.98px) {
+      margin-bottom: 20px;
+    }
   }
   &__item {
     display: flex;
     flex-wrap: nowrap;
+    @media screen and (min-width: 1200px) {
+      & {
+        padding: 10px 40px;
+      }
+      &:nth-child(4n + 1) {
+        padding-top: 30px;
+      }
+      &:nth-child(4n + 4) {
+        padding-bottom: 30px;
+      }
+      // &:nth-last-child(-n + 4) {
+      //   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+      // }
+    }
   }
 }
 .price {

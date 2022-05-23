@@ -22,6 +22,9 @@
       background-image: url(../images/background/contacts/contacts-bg-desktop@2x.png);
     }
   }
+  @media screen and (min-width: 1200px) {
+    flex-basis: 50%;
+  }
   &__title {
     margin-top: 0;
     margin-bottom: 40px;
@@ -32,9 +35,12 @@
     }
   }
   &__container {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
       display: flex;
       flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 100%;
     }
   }
   &__subsection {
@@ -81,6 +87,9 @@
 
   @media screen and (min-width: 768px) {
     margin-top: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 70px;
   }
 
   &::before {

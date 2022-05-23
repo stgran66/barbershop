@@ -17,6 +17,9 @@
   }
   @media screen and (min-width: 768px) {
     height: auto;
+    padding-left: 41px;
+    padding-right: 62px;
+    padding-top: 32px;
   }
 }
 .logo__icon {
@@ -91,8 +94,12 @@
   @media screen and (min-width: 1200px) {
     &__item:first-child {
       margin-bottom: 0;
+    }
+    &__item:last-child {
+      margin-right: 40px;
+      align-self: center;
+    }
   }
-  // &__item:last-child {margin-right: 40px;}
 }
 .site-contacts__link {
   @include font(12px, 600, 1.333, 0.1em);

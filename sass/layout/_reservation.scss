@@ -1,11 +1,19 @@
 .reservation {
   background-color: #191c26;
+  @media screen and (min-width: 1200px) {
+    flex-basis: 50%;
+  }
   &__title {
     margin-top: 0;
     margin-bottom: 44px;
     text-align: center;
     @media screen and (min-width: 768px) {
       text-align: left;
+    }
+  }
+  &__container {
+    @media screen and (min-width: 1200px) {
+      width: 100%;
     }
   }
 }

@@ -513,6 +513,14 @@ body {
   margin-left: 100px;
 }
 
+@media screen and (min-width: 1200px) {
+  .sections-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+  }
+}
+
 .header__container {
   position: absolute;
   left: 50%;
@@ -535,6 +543,9 @@ body {
 @media screen and (min-width: 768px) {
   .header__container {
     height: auto;
+    padding-left: 41px;
+    padding-right: 62px;
+    padding-top: 32px;
   }
 }
 
@@ -636,7 +647,10 @@ body {
 @media screen and (min-width: 1200px) {
   .site-contacts-list__item:first-child {
     margin-bottom: 0;
+  }
+  .site-contacts-list__item:last-child {
     margin-right: 40px;
+    align-self: center;
   }
 }
 
@@ -850,6 +864,15 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .barbershop__title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+  }
+}
+
 .barbershop__after-title {
   margin-bottom: 20px;
   font-size: 16px;
@@ -858,8 +881,23 @@ body {
   letter-spacing: 0.02em;
 }
 
+@media screen and (min-width: 1200px) {
+  .barbershop__after-title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+  }
+}
+
 .barbershop__text {
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .barbershop__text {
+    margin-bottom: 66.04px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -867,6 +905,15 @@ body {
     display: flex;
     padding-right: 39px;
     padding-left: 39px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .barbershop__container {
+    padding-left: 15px;
+    padding-right: 51px;
+    padding-top: 139px;
+    padding-bottom: 92px;
   }
 }
 
@@ -882,13 +929,42 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .barbershop-pictures {
+    margin-right: 64px;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .barbershop .pictures-list {
+    display: flex;
+  }
+}
+
 .barbershop .pictures-list__item {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .barbershop .pictures-list__item {
+    flex-basis: calc(50% - 15px);
+    margin-bottom: 0;
+  }
+  .barbershop .pictures-list__item:first-child {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .barbershop-content {
     flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .barbershop-content {
+    flex-basis: 500px;
   }
 }
 
@@ -954,7 +1030,7 @@ body {
   line-height: 2.14;
   letter-spacing: 0.02em;
   color: #9da4bd;
-  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  background-image: linear-gradient(to right, #171a24 0%, rgba(23, 26, 36, 0.2) 50%, #090b13 75%, rgba(9, 11, 19, 0.2) 100%);
 }
 
 @media screen and (max-width: 479.98px) {
@@ -975,13 +1051,37 @@ body {
   }
 }
 
-.prices-list__item:not(:last-child) {
-  margin-bottom: 20px;
+@media screen and (min-width: 1200px) {
+  .prices-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 255px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .prices-list__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .prices-list__item {
   display: flex;
   flex-wrap: nowrap;
+}
+
+@media screen and (min-width: 1200px) {
+  .prices-list__item {
+    padding: 10px 40px;
+  }
+  .prices-list__item:nth-child(4n + 1) {
+    padding-top: 30px;
+  }
+  .prices-list__item:nth-child(4n + 4) {
+    padding-bottom: 30px;
+  }
 }
 
 .price {
@@ -1019,7 +1119,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-bottom: -30px;
 }
 
 @media screen and (max-width: 479.98px) {
@@ -1037,7 +1136,6 @@ body {
 .advantages-list__item {
   min-height: 133px;
   margin-left: 30px;
-  margin-bottom: 30px;
   flex-basis: calc(100% / 2 - 30px);
   padding: 20px 32px;
   background-color: #f7f7f7;
@@ -1047,6 +1145,9 @@ body {
   .advantages-list__item {
     flex-basis: 100%;
     margin-left: 0;
+  }
+  .advantages-list__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -1096,6 +1197,24 @@ body {
   justify-content: flex-end;
 }
 
+@media screen and (min-width: 1200px) {
+  .advantages-wrapper {
+    flex-basis: 370px;
+    margin-right: 130px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages__container {
+    padding-right: 85px;
+    padding-left: 115px;
+    padding-top: 143px;
+    padding-bottom: 108px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
 .team {
   background-color: #f7f7f7;
 }
@@ -1104,14 +1223,36 @@ body {
   margin-bottom: 44px;
 }
 
-.team-list__item:not(:last-child) {
-  margin-bottom: 64px;
+@media screen and (max-width: 1199.98px) {
+  .team-list__item:not(:last-child) {
+    margin-bottom: 64px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .team__container {
     padding-left: 159px;
     padding-right: 159px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__item {
+    margin-left: 30px;
   }
 }
 
@@ -1144,6 +1285,12 @@ body {
   background-color: #191c26;
 }
 
+@media screen and (min-width: 1200px) {
+  .reservation {
+    flex-basis: 50%;
+  }
+}
+
 .reservation__title {
   margin-top: 0;
   margin-bottom: 44px;
@@ -1153,6 +1300,12 @@ body {
 @media screen and (min-width: 768px) {
   .reservation__title {
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reservation__container {
+    width: 100%;
   }
 }
 
@@ -1290,6 +1443,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts {
+    flex-basis: 50%;
+  }
+}
+
 .contacts__title {
   margin-top: 0;
   margin-bottom: 40px;
@@ -1303,10 +1462,16 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .contacts__container {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__container {
+    width: 100%;
   }
 }
 
@@ -1372,6 +1537,12 @@ body {
 @media screen and (min-width: 768px) {
   .opening-hours {
     margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .opening-hours {
+    margin-top: 70px;
   }
 }
 

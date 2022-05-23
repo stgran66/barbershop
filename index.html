@@ -253,12 +253,14 @@
       </section>
       <section class="section advantages">
         <div class="container advantages__container">
-          <p class="pre-title">Old traditional school</p>
-          <h2 class="section__title advantages__title">Why come to us?</h2>
-          <p class="after-title advantages__after-title">
-            Only good things are said about us. But it's better to see and feel 1 time, than read 10
-            times.
-          </p>
+          <div class="advantages-description__wrapper">
+            <p class="pre-title">Old traditional school</p>
+            <h2 class="section__title advantages__title">Why come to us?</h2>
+            <p class="after-title advantages__after-title">
+              Only good things are said about us. But it's better to see and feel 1 time, than read
+              10 times.
+            </p>
+          </div>
           <div class="advantages-wrapper">
             <ul class="advantages-list">
               <li class="advantages-list__item advantage">
@@ -746,76 +748,78 @@
           </ul>
         </div>
       </section>
-      <section class="reservation" id="reservation">
-        <div class="container">
-          <h2 class="section__title section__title--dark reservation__title">Reserve</h2>
-          <form class="appointment-form">
-            <div class="appointment-form__wrapper">
-              <input
-                type="text"
-                name="user-name"
-                id="user-name"
-                class="appointment-form__textfield"
-                placeholder=" "
-                autocomplete="off"
-              />
-              <label for="user-name" class="appointment-form__label">name*</label>
-            </div>
-            <div class="appointment-form__wrapper">
-              <input
-                type="tel"
-                name="user-tel"
-                id="user-tel"
-                class="appointment-form__textfield"
-                placeholder=" "
-                autocomplete="off"
-              />
-              <label for="user-tel" class="appointment-form__label">phone number*</label>
-            </div>
-            <div class="appointment-form__wrapper">
-              <textarea
-                id="user-comment"
-                name="user-comment"
-                class="appointment-form__textarea"
-                placeholder=" "
-              ></textarea>
-              <label for="user-comment" class="appointment-form__label">message</label>
-            </div>
-            <button type="subtmit" class="btn appointment-form__btn appointment-form__btn--dark">
-              send
-            </button>
-          </form>
-        </div>
-      </section>
-      <section class="section contacts" id="contacts">
-        <div class="container contacts__container">
-          <h2 class="section__title section__title--dark contacts__title">Contacts</h2>
-          <address class="address">
-            <a href="" class="address__location address__link">
-              <svg width="24" height="24" class="address__icon">
-                <use href="./images/icons.svg#icon-map-pin"></use>
-              </svg>
-              Vasylkivska str., 7A, Kyiv, 08132
-            </a>
-            <a href="tel:+380441111111" class="address__tel address__link">
-              <svg width="24" height="24" class="address__icon">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-              +38 044 111 11 11
-            </a>
-            <a href="mailto:barbershop@email.com" class="address__email address__link">
-              <svg width="24" height="24" class="address__icon">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              barbershop@email.com
-            </a>
-          </address>
-          <div class="contacts__subsection">
-            <h3 class="subsection__title opening-hours">Opening hours</h3>
-            <p class="opening-hours__text">Everyday from 9:00 to 22:00</p>
+      <div class="sections-wrapper">
+        <section class="reservation" id="reservation">
+          <div class="container reservation__container">
+            <h2 class="section__title section__title--dark reservation__title">Reserve</h2>
+            <form class="appointment-form">
+              <div class="appointment-form__wrapper">
+                <input
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  class="appointment-form__textfield"
+                  placeholder=" "
+                  autocomplete="off"
+                />
+                <label for="user-name" class="appointment-form__label">name*</label>
+              </div>
+              <div class="appointment-form__wrapper">
+                <input
+                  type="tel"
+                  name="user-tel"
+                  id="user-tel"
+                  class="appointment-form__textfield"
+                  placeholder=" "
+                  autocomplete="off"
+                />
+                <label for="user-tel" class="appointment-form__label">phone number*</label>
+              </div>
+              <div class="appointment-form__wrapper">
+                <textarea
+                  id="user-comment"
+                  name="user-comment"
+                  class="appointment-form__textarea"
+                  placeholder=" "
+                ></textarea>
+                <label for="user-comment" class="appointment-form__label">message</label>
+              </div>
+              <button type="subtmit" class="btn appointment-form__btn appointment-form__btn--dark">
+                send
+              </button>
+            </form>
           </div>
-        </div>
-      </section>
+        </section>
+        <section class="section contacts" id="contacts">
+          <div class="container contacts__container">
+            <h2 class="section__title section__title--dark contacts__title">Contacts</h2>
+            <address class="address">
+              <a href="" class="address__location address__link">
+                <svg width="24" height="24" class="address__icon">
+                  <use href="./images/icons.svg#icon-map-pin"></use>
+                </svg>
+                Vasylkivska str., 7A, Kyiv, 08132
+              </a>
+              <a href="tel:+380441111111" class="address__tel address__link">
+                <svg width="24" height="24" class="address__icon">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                +38 044 111 11 11
+              </a>
+              <a href="mailto:barbershop@email.com" class="address__email address__link">
+                <svg width="24" height="24" class="address__icon">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                barbershop@email.com
+              </a>
+            </address>
+            <div class="contacts__subsection">
+              <h3 class="subsection__title opening-hours">Opening hours</h3>
+              <p class="opening-hours__text">Everyday from 9:00 to 22:00</p>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <div class="container footer__container">

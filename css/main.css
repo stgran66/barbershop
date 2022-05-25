@@ -603,7 +603,6 @@ body {
 }
 
 .site-nav__link {
-  dipslay: block;
   padding-top: 32px;
   padding-bottom: 32px;
   font-size: 12px;
